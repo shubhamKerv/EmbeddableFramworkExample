@@ -7,9 +7,7 @@ import iframeTemplate from "./iframe.template";
 
 export const IFrame = () => {
   // Dynamically build the URL for the Embedded Softphone
-  const frameworkURL = `https://apps.mypurecloud.ie/crm/index.html?` +
-    `crm=framework-local-secure` +
-    `&crm_domain=${encodeURIComponent('http://localhost:3000')}`;
+  const frameworkURL = `https://apps.mypurecloud.ie/crm/embeddableFramework.html`;
 
   const [showIFrame, setShowIFrame] = useState(false);
   const navigate = useNavigate();
